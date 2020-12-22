@@ -1,0 +1,58 @@
+
+body{
+    margin: auto;
+}
+/* Style the buttons inside the tab */
+#tab button {
+    display: block;
+    /*padding: 10px 10px;*/
+    /*width: 100%;*/
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    /*font-size: 17px;*/
+}
+
+/* Change background color of buttons on hover */
+#tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+#tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: block;
+    padding: 0px 12px;
+    border-left: none;
+    height: 300px;
+}
+/*#CATEGORY{*/
+    /*display: block;*/
+/*}*/
+#DESIGNER{
+    display: none;
+}
+#COLOUR{
+    display: none;
+}
+#SALES{
+    display: none;
+}
+#PRICE{
+    display: none;
+}
+#SEASONS{
+    display: none;
+}
+#DownCoats, #HoodedCoats, #LeatherCoats, #MilitaryCoats, #ParkasDuffleCoats, #SingleBreastedCoats, #TrenchCoatsMacs{
+    display: none;
+}
+#mynav {
+    width: 98%;
+}
