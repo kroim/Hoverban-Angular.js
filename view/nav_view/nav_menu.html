@@ -1,0 +1,212 @@
+
+<div ng-controller="navCtrl" class="row" style="margin: 0 1% 0 0; overflow-y: auto;">
+    <div id="tab" class="col-md-2" style="height: 700px;overflow-y: auto;">
+        <div align="center" style="margin-bottom: 2%"><img style="height: 300px; width: 100%;"></div>
+
+        <!--<button class="tablinks" onclick="openCity(event, 'CATEGORY')" id="defaultOpen">CATEGORY</button>-->
+        <!--<button class="tablinks" onclick="openCity(event, 'DESIGNER')">DESIGNER</button>-->
+        <!--<button class="tablinks" onclick="openCity(event, 'COLOUR')">COLOUR</button>-->
+        <!--<button class="tablinks" onclick="openCity(event, 'PRICE')">PRICE</button>-->
+        <!--<button class="tablinks" onclick="openCity(event, 'SEASONS')">SEASONS</button>-->
+        <!--<button class="tablinks" onclick="openCity(event, 'SALES')">SALES</button>-->
+
+        <div class="nav-side-menu">
+            <div class="menu-list">
+                <ul id="menu-content" class="menu-content collapse out">
+                    <li data-toggle="collapse" data-target="#category" class="collapsed active">
+                        <button class="tablinks">CATEGORY</button>
+                    </li>
+                    <ul class="sub-menu collapse" id="category">
+                        <li data-toggle="collapse" data-target="#Coats" class="collapsed">
+                            <button class="tablinks">Coats</button>
+                        </li>
+                        <ul class="sub-sub-menu collapse" id="Coats">
+                            <input type="checkbox" checked><button class="tablinks" onclick="openCity(event, 'DoubleBreastedPeacoats')" id="defaultOpen">Breasted&Peacoats</button>
+                            <input type="checkbox"><button class="tablinks" onclick="openCity(event, 'DownCoats')">Down Coats</button>
+                            <input type="checkbox"><button class="tablinks" onclick="openCity(event, 'HoodedCoats')">Hooded Coats</button>
+                            <input type="checkbox"><button class="tablinks" onclick="openCity(event, 'LeatherCoats')">Leather Coats</button>
+                            <input type="checkbox"><button class="tablinks" onclick="openCity(event, 'MilitaryCoats')">Military Coats</button>
+                            <input type="checkbox"><button class="tablinks" onclick="openCity(event, 'ParkasDuffleCoats')">Parkas&Duffle Coats</button>
+                            <input type="checkbox"><button class="tablinks" onclick="openCity(event, 'SingleBreastedCoats')">Single-Breasted Coats</button>
+                            <input type="checkbox"><button class="tablinks" onclick="openCity(event, 'TrenchCoatsMacs')">Trench Coats&Macs</button>
+                        </ul>
+                        <li data-toggle="collapse" data-target="#Denim" class="collapsed">
+                            <button class="tablinks">Denim</button>
+                        </li>
+                        <ul class="sub-sub-menu collapse" id="Denim">
+                            <button class="tablinks">Bootcut Jeans</button>
+                            <button class="tablinks">Croppeds Jeans</button>
+                            <button class="tablinks">Denim Jackets</button>
+                            <button class="tablinks">Denim Shirts</button>
+                            <button class="tablinks">Denim Shorts</button>
+                            <button class="tablinks">Drop-Crotch Jeans</button>
+                            <button class="tablinks">Regular&Straight-Leg Jeans</button>
+                            <button class="tablinks">Relaxed-Fit Jeans</button>
+                            <button class="tablinks">Skinny Jeans</button>
+                            <button class="tablinks">Slim-Fit Jeans</button>
+                            <button class="tablinks">Tapered Jeans</button>
+                            <button class="tablinks">Wide-Leg Jeans</button>
+                        </ul>
+                        <li data-toggle="collapse" data-target="#Jackets" class="collapsed">
+                            <button class="tablinks">Jackets</button>
+                        </li>
+                        <ul class="sub-sub-menu collapse" id="Jackets">
+                            <button class="tablinks">Biker Jackets</button>
+                            <button class="tablinks">Blazers</button>
+                            <button class="tablinks">Bomber Jackets</button>
+                            <button class="tablinks">Denim Jackets</button>
+                            <button class="tablinks">Down Jackets</button>
+                            <button class="tablinks">Hooded Jackets</button>
+                            <button class="tablinks">Leather Jackets</button>
+                            <button class="tablinks">Lightweight Jackets</button>
+                            <button class="tablinks">Military Jackets</button>
+                            <button class="tablinks">Shirt Jackets</button>
+                            <button class="tablinks">Sport Jackets&Wind Breakers</button>
+                            <button class="tablinks">Suit&Dinner Jackets</button>
+                            <button class="tablinks">Waistcoats&Gilets</button>
+                        </ul>
+                        <li data-toggle="collapse" data-target="#Pants" class="collapsed">
+                            <button class="tablinks">Pants</button>
+                        </li>
+                        <ul class="sub-sub-menu collapse" id="Pants">
+                            <button class="tablinks">Chinos</button>
+                            <button class="tablinks">Cropped Pants</button>
+                            <button class="tablinks">Drop-Crotch Pants</button>
+                            <button class="tablinks">Leggings</button>
+                            <button class="tablinks">Loose Fit Pants</button>
+                            <button class="tablinks">Regular-Fit&Straight Leg Pants</button>
+                            <button class="tablinks">Skinny Pants</button>
+                            <button class="tablinks">Sweatpants</button>
+                            <button class="tablinks">Tailored Pants</button>
+                            <button class="tablinks">Tapered Pants</button>
+                            <button class="tablinks">Wide Leg Pants</button>
+                        </ul>
+                        <!--<li data-toggle="collapse" data-target="#service" class="collapsed">-->
+                            <!--<button class="tablinks">Polo Shirts</button>-->
+                        <!--</li>-->
+                        <li data-toggle="collapse" data-target="#Shirts" class="collapsed">
+                            <button class="tablinks">Shirts<span class="arrow"></span></button>
+                        </li>
+                        <li data-toggle="collapse" data-target="#Shorts" class="collapsed">
+                            <button class="tablinks">Shorts<span class="arrow"></span></button>
+                        </li>
+                        <ul class="sub-sub-menu collapse" id="Shorts">
+                            <button class="tablinks">Bermuda Shorts</button>
+                            <button class="tablinks">Cargo Shorts</button>
+                            <button class="tablinks">Deck Shorts</button>
+                            <button class="tablinks">Demin Shorts</button>
+                            <button class="tablinks">Drop-Crotch Shorts</button>
+                            <button class="tablinks">Khaki Shorts</button>
+                            <button class="tablinks">Tailored Shorts</button>
+                            <button class="tablinks">Track&Running Shorts</button>
+                        </ul>
+                        <li data-toggle="collapse" data-target="#Suits" class="collapsed">
+                            <button class="tablinks">Suits<span class="arrow"></span></button>
+                        </li>
+                        <ul class="sub-sub-menu collapse" id="Suits">
+                            <button class="tablinks">Dinner Suits</button>
+                            <button class="tablinks">Formal Suits</button>
+                            <button class="tablinks">Jumpsuits</button>
+                            <button class="tablinks">Suit Jackets</button>
+                        </ul>
+                        <li data-toggle="collapse" data-target="#SweatersKnitwear" class="collapsed">
+                            <button class="tablinks">Sweaters&Knitwear<span class="arrow"></span></button>
+                        </li>
+                        <ul class="sub-sub-menu collapse" id="SweatersKnitwear">
+                            <button class="tablinks">Cardigans</button>
+                            <button class="tablinks">Hoodies</button>
+                            <button class="tablinks">Knitted Sweaters</button>
+                            <button class="tablinks">Sweatshirts</button>
+                        </ul>
+                        <li data-toggle="collapse" data-target="#Swinwear" class="collapsed">
+                            <button class="tablinks">Swinwear<span class="arrow"></span></button>
+                        </li>
+                        <ul class="sub-sub-menu collapse" id="Swinwear">
+                            <button class="tablinks">Beach Accessories</button>
+                            <button class="tablinks">Swim&Board Shorts</button>
+                            <button class="tablinks">Swimming Trunks</button>
+                        </ul>
+                        <li data-toggle="collapse" data-target="#TShirtVests" class="collapsed">
+                            <button class="tablinks">T-Shirts&Vests<span class="arrow"></span></button>
+                        </li>
+                        <ul class="sub-sub-menu collapse" id="TShirtVests">
+                            <button class="tablinks">T-Shirts</button>
+                            <button class="tablinks">Vests&Tank Tops</button>
+                        </ul>
+                        <li data-toggle="collapse" data-target="#UnderwearSocks" class="collapsed">
+                            <button class="tablinks">Underwear&Socks<span class="arrow"></span></button>
+                        </li>
+                        <ul class="sub-sub-menu collapse" id="UnderwearSocks">
+                            <button class="tablinks">Briefs&Boxers</button>
+                            <button class="tablinks">Loungewear</button>
+                            <button class="tablinks">Sleepwear</button>
+                            <button class="tablinks">Socks</button>
+                        </ul>
+                    </ul>
+                    <li data-toggle="collapse" data-target="#designer" class="collapsed">
+                        <button class="tablinks">DESIGNER<span class="arrow"></span></button>
+                    </li>
+                    <li data-toggle="collapse" data-target="#color" class="collapsed">
+                        <button class="tablinks">COLOR<span class="arrow"></span></button>
+                    </li>
+                    <ul class="sub-menu collapse" id="color">
+                        <button class="tablinks">Blue</button>
+                        <button class="tablinks">Brown</button>
+                        <button class="tablinks">Green</button>
+                        <button class="tablinks">Grey</button>
+                        <button class="tablinks">Metallic</button>
+                        <button class="tablinks">Multicolour</button>
+                        <button class="tablinks">Nude&Neutrals</button>
+                        <button class="tablinks">Pink&Purple</button>
+                        <button class="tablinks">Red</button>
+                        <button class="tablinks">White</button>
+                        <button class="tablinks">Yellow</button>
+                    </ul>
+                    <li data-toggle="collapse" data-target="#price" class="collapsed">
+                        <button class="tablinks">PRICE<span class="arrow"></span></button>
+                    </li>
+                    <li data-toggle="collapse" data-target="#seasons" class="collapsed">
+                        <button class="tablinks">SEASONS<span class="arrow"></span></button>
+                    </li>
+                    <ul class="sub-menu collapse" id="seasons">
+                        <button class="tablinks">Spring</button>
+                        <button class="tablinks">Summer</button>
+                        <button class="tablinks">Fall</button>
+                        <button class="tablinks">Winter</button>
+                    </ul>
+                    <li data-toggle="collapse" data-target="#sales" class="collapsed">
+                        <button class="tablinks">SALES<span class="arrow"></span></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-10" id="nav_contents" style="height: 700px; overflow-y: auto; padding: 3% 3% 3% 3%; background-color: #f7f7f7;">
+        <div id="DoubleBreastedPeacoats" class="tabcontent">
+            <img ng-repeat="x in categroy_names" src="./data/Home/{{x}}" style="display: inline; margin: 5%; width: 260px; height: 450px;">
+        </div>
+        <div id="DownCoats" class="tabcontent">
+            <h1>DownCoats</h1>
+        </div>
+        <div id="HoodedCoats" class="tabcontent">
+            <h1>HoodedCoats</h1>
+        </div>
+        <div id="LeatherCoats" class="tabcontent" >
+            <h1>LeatherCoats</h1>
+        </div>
+        <div id="MilitaryCoats" class="tabcontent">
+            <h1>MilitaryCoats</h1>
+        </div>
+        <div id="ParkasDuffleCoats" class="tabcontent">
+            <h1>ParkasDuffleCoats</h1>
+        </div>
+        <div id="SingleBreastedCoats" class="tabcontent">
+            <h1>SingleBreastedCoats</h1>
+        </div>
+        <div id="TrenchCoatsMacs" class="tabcontent">
+            <h1>TrenchCoatsMacs</h1>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,44 @@
+<div class="navbar">
+<div class="navbar navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <input type="text" id="search" name="search" autocomplete="off" style="background-image: url('./data/searchicon.png'); display: none" placeholder="Search.."/>
+    </div>
+    <div>
+        <!--<div class="navbar-header">-->
+            <!--&lt;!&ndash; You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) &ndash;&gt;-->
+            <!--<a class="navbar-brand" href="#/">HOME</a>-->
+        <!--</div>-->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="mynav" class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#!signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#!signin"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+                <li><a href="#!collections"><span class="glyphicon glyphicon-thumbs-up"></span> Collections</a>
+                </li>
+                <li><a href="#!cart"><i class="glyphicon fa fa-shopping-cart fa-1x" style="vertical-align: middle;" aria-hidden="true"></i>  Shopping Cart</a>
+                </li>
+                <li><a onclick="showsearch()"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+            </ul>
+        </div>
+
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</div>
+</div>
+<div class="navbar text-center">
+    <a href="#!"><img src="./data/HOVERBAN1.png" height="50px"></a>
+</div>
+<script>
+    function showsearch(){
+        if($("#search").css("display") == "none"){
+            $("#search").css("display", "inherit");
+        }
+        else{
+            $("#search").css("display", "none");
+        }
+    }
+</script>
+
+
